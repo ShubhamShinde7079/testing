@@ -1,0 +1,26 @@
+<script>
+    class a
+    {
+        my1()
+        {
+        console.log("class a");
+        }
+    }
+    class b extends a
+    {
+        my1(){
+            super.my1();
+            console.log("class b my 1");
+        }
+        my2()
+        {
+        console.log("class b");
+        }
+    }
+
+    var rec= new b
+    console.log(rec);
+    rec.my1();
+    rec.my2();
+
+</script>
